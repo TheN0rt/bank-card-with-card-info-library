@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style/style.css">
+   <title>Bank card</title>
+</head>
+<body>
+   <div class="wrapper">
+      <header>
+         <img src="./images/transparent-moscow-byzantine-empire-coat-of-arms-of-russia-binary-option-russia-world-national-emblem-russia-transformed.webp" alt="site logo">
+         <nav>
+            <ul>
+               <li><a href="#">home</a></li>
+               <li><a href="#">about</a></li>
+               <li><a href="#">contacts</a></li>
+               <li><a href="#">back</a></li>
+            </ul>
+         </nav>
+      </header>
+      <div class="price__info">
+         <h1>Фискальный счёт</h1>
+         <p><span>Цена</span> руб.</p>
+         <p><span>Наименование товара</span></p>
+         <p><span>Количество штук</span> шт.</p>
+         <button id="continue">Продолжить</button>
+         <p class="error">Ошибка при заполнении карточных данных. Проверьте правильность заполнения</p>
+      </div>
+      <div class="card">
+         <div class="card__container">
+            <div class="card__front">
+               <img src="" alt="bank" id="bank">
+               <input type="text" id="number" placeholder="0123 4567 8910 1112">
+               <div class="card__info">
+                  <input type="text" id="name" placeholder="Firstname Middlename">
+                  <div class="card__date">
+                     <input type="text" id="month" placeholder="MM">
+                     /
+                     <input type="text" id="year" placeholder="YY">
+                  </div>
+               </div>
+               <img src="" alt="logo" id="logo">
+            </div>
+            <div class="card__back">
+               <div class="card-grey-line"></div>
+               <input type="text" id="cvc" placeholder="123">
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="./node_modules/card-info/dist/card-info.js"></script>
+   <script src="./src/script.js"></script>
+</body>
+</html>
